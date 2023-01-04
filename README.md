@@ -5,3 +5,5 @@ Contains directories that correspond to the repositories for workshops/exercises
 Each workshop/exercise is its own repository. Forking each one clutters my repositories page.
 
 Instead of forking each workshop's repo to add my changes, I'm manually adding directory for each module's workshop/exercise.
+
+I've [written about](https://til.juliusgamanyi.com/posts/git-graft-combine-multiple-repos-history) how I ended up with this approach.
