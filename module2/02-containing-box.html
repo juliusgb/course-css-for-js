@@ -1,0 +1,38 @@
+<html>
+	<style>
+		.flowlayout.container {
+			width:200px;
+			border: solid 5px;
+			padding: 16px;
+		}
+		.position-layout.absolute-position.parent {
+			width: 200px;
+			height: 150px;
+			border: solid 5px gray;
+			/* The magic property in enclose the teenager:
+				Toggle it on and off
+			*/
+			position: relative;
+		}
+		.position-layout.absolute-position.rebellious-teenager {
+			position: absolute;
+			bottom: 0px;
+			left: 0px;
+			background: deeppink;
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+		}
+  </style>
+	<body>
+		<h3>Flowlayout containing box</h3>
+		<section class="flowlayout container">
+			<p>Hello World</p>
+		</section>
+
+		<h3>Absolute containing box</h3>
+		<div class="position-layout absolute-position parent">
+			<div class="position-layout absolute-position rebellious-teenager"></div>
+		</div>
+	</body>
+</html>
