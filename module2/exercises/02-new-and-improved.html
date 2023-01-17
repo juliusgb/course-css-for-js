@@ -29,6 +29,22 @@
 			top: 8px;
 			left: -8px;
 			border-radius: 4px 1rem 1rem 4px;
+			/* mixing units - why?
+				intent is to have a circle on the right side.
+				That means, that radius has to be half the height of the element.
+				Since element has no height, but font-size and line-height.
+				Multiplying them gives us the height of the element: 1rem (16px) x 2 = 32px
+				Use rem to scale up and down with what the user chooses.
+
+				Why not percentages?
+					percentages aren't based on height.
+					If width and height are equal, we can use percentages.
+					Otherwise, we get an oval shape on the right.
+
+				Why only on the right and not on the left?
+					The left is decorative. It doesn't need to scale with user's chosen font size.
+					The right side has the circle shape, which needs to scales with user's chosen font size.
+			*/
 		}
 
 
