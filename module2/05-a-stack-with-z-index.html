@@ -1,0 +1,31 @@
+<html>
+	<style>
+		.box {
+			width: 50px;
+			height: 50px;
+			border: 3px solid;
+			background: silver;
+			font-size: 2rem;
+			text-align: center;
+			position: relative;
+		}
+		.first.box {
+			z-index: 1;
+		}
+		.second.box {
+			margin-top: -30px;
+			margin-left: 20px;
+			background: pink;
+			z-index: 2;
+		}
+
+  </style>
+	<body>
+		<div class="first box">
+			A
+		</div>
+		<div class="second box">
+			B
+		</div>
+	</body>
+</html>
