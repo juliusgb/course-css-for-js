@@ -1,0 +1,100 @@
+<html>
+	<style>
+		body {
+			background: hsl(238deg 28% 73%);
+			padding: 48px 16px;
+		}
+
+		article {
+			max-width: 320px;
+			margin: 0 auto;
+			padding: 16px;
+			border-radius: 8px;
+			background: white;
+			box-shadow: 0px 2px 8px
+				hsl(238deg 28% 50% / 0.5);
+			position: relative;
+		}
+
+		.flag {
+			padding-left: 8px;
+			padding-right: 16px;
+			font-size: 1rem;
+			line-height: 2;
+			font-weight: 500;
+			background: hsl(50deg 95% 85%);
+			box-shadow: 0px 1px 2px
+				hsl(50deg 45% 45% / 0.2);
+			position: absolute;
+			top: 8px;
+			left: -8px;
+			border-radius: 4px 1rem 1rem 4px;
+			/* mixing units - why?
+				intent is to have a circle on the right side.
+				That means, that radius has to be half the height of the element.
+				Since element has no height, but font-size and line-height.
+				Multiplying them gives us the height of the element: 1rem (16px) x 2 = 32px
+				Use rem to scale up and down with what the user chooses.
+
+				Why not percentages?
+					percentages aren't based on height.
+					If width and height are equal, we can use percentages.
+					Otherwise, we get an oval shape on the right.
+
+				Why only on the right and not on the left?
+					The left is decorative. It doesn't need to scale with user's chosen font size.
+					The right side has the circle shape, which needs to scales with user's chosen font size.
+			*/
+		}
+
+
+
+		/* Cosmetic styles below: */
+		.product-photo {
+			margin: -16px;
+			margin-bottom: 12px;
+		}
+		.product-photo img {
+			display: block;
+			width: 100%;
+			border-radius: 8px 8px 0px 0px;
+		}
+		h2 {
+			font-size: 1.5rem;
+			font-weight: 500;
+			margin-bottom: 0.5em;
+		}
+		.subtitle {
+			font-size: 1rem;
+			color: hsl(0deg 0% 30%);
+			font-weight: 300;
+		}
+  </style>
+	<body>
+		<article>
+			<div class="product-photo">
+				<img
+					alt="Product photo of a minimal watch"
+					src="/module2/exercises/02-watch-rachit-tank.jpg"
+				/>
+			</div>
+			<div class="flag">
+				New and Improved!
+			</div>
+			<h2>
+				Novus Watch
+				<span class="subtitle"
+					>Series IV</span
+				>
+			</h2>
+			<p>
+				The pinnacle of fashion and tech.
+				This wearable piece is an homage to
+				gilded palaces and minimal regalia,
+				combining nouveau-deco and brutalism
+				influences in a compact, Swiss-made
+				watch.
+			</p>
+		</article>
+	</body>
+</html>

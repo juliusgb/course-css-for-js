@@ -1,0 +1,50 @@
+<html>
+	<style>
+		/* Baseline decorative styles: */
+		html {
+			height: 100%;
+		}
+		body {
+			height: 150%;
+			padding: 0;
+		}
+		ul {
+			padding: 0;
+			margin: 0;
+			text-align: center;
+		}
+		li {
+			display: inline-block;
+			padding: 0;
+			margin: 0 16px;
+			line-height: 50px;
+		}
+		main {
+			padding: 32px;
+		}
+		header {
+			background: slateblue;
+			color: white;
+			opacity: 0.96;
+			/* solution */
+			position: sticky;
+			top: -16px;
+			/* make text larger by top offset: 50+16 */
+			height: 66px;
+			/* add those 16px that disappeared */
+			padding-top: 16px;
+		}
+  </style>
+	<body>
+		<header>
+			<ul>
+				<li>Home</li>
+				<li>About</li>
+				<li>Contact</li>
+			</ul>
+		</header>
+		<main>
+			<p>Hello world!</p>
+		</main>
+	</body>
+</html>
